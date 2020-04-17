@@ -1,0 +1,32 @@
+
+.another-post {
+    &_prev {
+    }
+
+    &_next {
+        text-align: right;
+    }
+
+    &_next & {
+        &__link {
+            justify-content: flex-end;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        @extend .h1;
+        text-transform: uppercase;
+        font-family: $font-family-accent;
+        min-height: $unit * 3;
+    }
+    &__title {
+        font-size: 18px;
+        margin-bottom: $unit;
+        min-height: $unit * 2;
+    }
+    &__thumb {
+        width: 50%;
+    }
+}

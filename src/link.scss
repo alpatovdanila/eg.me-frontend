@@ -1,0 +1,32 @@
+
+@mixin link-variant($color, $hoverColor: $color) {
+    &:link,
+    &:visited {
+        color: $color;
+    }
+    &:hover,
+    &:visited:hover {
+        color: $hoverColor;
+    }
+}
+
+
+
+.link {
+    &:link,
+    &:hover,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &_text {
+        @include link-variant($color-primary, lighten($color-primary, 10));
+        &:link,
+        &:hover,
+        &:visited {
+            text-decoration: underline;
+        }
+    }
+
+    transition: color $transition-micro;
+}

@@ -1,0 +1,30 @@
+
+.h2 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.h1 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h2 {
+    @extend .h2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @extend .h1;
+}
+
+
+body {
+    font-family: $font-family-main;
+    color: white;
+    background: linear-gradient(to bottom, #1a2124, #141414);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+

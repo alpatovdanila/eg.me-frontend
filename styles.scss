@@ -1,0 +1,266 @@
+@import "/node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "/node_modules/bootstrap/scss/utilities/_text";
+@import "/node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Unica+One&display=swap");
+
+$unit: 1rem;
+
+$font-family-accent: "Unica One", cursive;
+$font-family-main: "Open Sans", sans-serif;
+$color-primary: #1998c1;
+$transition-micro: 0.16s linear;
+$transition-normal: 0.28s linear;
+
+.h2 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.h1 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h2 {
+    @extend .h2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @extend .h1;
+}
+
+@mixin link-variant($color, $hoverColor: $color) {
+    &:link,
+    &:visited {
+        color: $color;
+    }
+    &:hover,
+    &:visited:hover {
+        color: $hoverColor;
+    }
+}
+
+.logo {
+    word-break: break-all;
+    padding-bottom: $unit;
+
+    @include media-breakpoint-up("lg") {
+        padding-bottom: 0;
+    }
+
+    &__name {
+    }
+
+    &__slogan {
+    }
+}
+
+.link {
+    &:link,
+    &:hover,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &_text {
+        @include link-variant($color-primary, lighten($color-primary, 10));
+        &:link,
+        &:hover,
+        &:visited {
+            text-decoration: underline;
+        }
+    }
+
+    transition: color $transition-micro;
+}
+
+body {
+    font-family: $font-family-main;
+    color: white;
+    background: linear-gradient(to bottom, #1a2124, #141414);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.layout {
+    &__header {
+        height: $unit * 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: $unit;
+    }
+
+    &__main {
+
+    }
+
+    &__post-cover{
+        background-repeat:no-repeat;
+        position:absolute;
+        background-size:130%;
+        background-position:center center;
+        opacity:0.08;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        filter:blur(25px);
+    }
+
+    &__footer {
+        display: flex;
+        padding: $unit * 2 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__section{
+        margin-bottom:$unit*7;
+    }
+}
+
+.main-menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+
+    &__link {
+        white-space: nowrap;
+        font-family: $font-family-accent;
+        text-transform: uppercase;
+        font-size: 18px;
+        &:not(:last-child) {
+            margin-right: $unit;
+        }
+
+        &_active {
+            @include link-variant(lighten($color-primary, 10));
+            &:link,
+            &:hover,
+            &:visited {
+                text-decoration: none !important;
+            }
+        }
+    }
+}
+
+.post-matrix {
+    &__item {
+        margin-bottom: $unit * 2;
+
+        @include media-breakpoint-up("lg") {
+            margin-bottom: $unit * 3;
+        }
+    }
+}
+
+.post-preview {
+    &_text-only {
+        height: 100%;
+        border: 1px solid rgba(white, 0.05);
+        padding: $unit;
+    }
+
+    &__thumb {
+        width: 100%;
+        margin-bottom: $unit/2;
+    }
+
+    &__title {
+        padding: $unit/2 0;
+        align-items: center;
+        display: flex;
+    }
+}
+
+.post-meta {
+    color: #a6a6a6;
+    font-size: 14px;
+    height: $unit;
+    line-height: 16px;
+}
+
+.social-links {
+    &__link {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+.copyright {
+    font-size: 48px;
+    @include link-variant(rgba(white, 0.5), white);
+}
+
+.powered-by {
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.post {
+    padding-top: $unit * 3;
+    &__title {
+        font-size: 48px;
+        line-height: 100%;
+        min-height: $unit * 3;
+        margin-bottom: $unit;
+    }
+
+    &__meta {
+        margin-bottom: $unit * 2;
+    }
+
+    &__body {
+        margin-bottom: $unit * 5;
+        p {
+            font-size: 16px;
+            line-height: 147%;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding-bottom: $unit/2;
+        }
+    }
+}
+
+.another-post {
+    &_prev {
+        
+    }
+
+    &_next {
+        text-align:right;
+        
+    }
+
+    &_next &{
+        &__link{
+            justify-content:flex-end;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        @extend .h1;
+        text-transform: uppercase;
+        font-family: $font-family-accent;
+        min-height: $unit * 3;
+    }
+    &__title {
+        font-size: 18px;
+        margin-bottom: $unit;
+        min-height: $unit * 2;
+    }
+    &__thumb {
+        width: 50%;
+    }
+}

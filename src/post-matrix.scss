@@ -1,0 +1,10 @@
+
+.post-matrix {
+    &__item {
+        margin-bottom: $unit * 2;
+
+        @include media-breakpoint-up("lg") {
+            margin-bottom: $unit * 3;
+        }
+    }
+}

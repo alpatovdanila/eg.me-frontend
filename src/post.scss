@@ -1,0 +1,27 @@
+
+.post {
+    padding-top: $unit * 3;
+    &__title {
+        font-size: 48px;
+        line-height: 100%;
+        min-height: $unit * 3;
+        margin-bottom: $unit;
+    }
+
+    &__meta {
+        margin-bottom: $unit * 2;
+    }
+
+    &__body {
+        margin-bottom: $unit * 5;
+        p {
+            font-size: 16px;
+            line-height: 147%;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding-bottom: $unit/2;
+        }
+    }
+}

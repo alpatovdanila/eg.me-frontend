@@ -1,0 +1,7 @@
+
+@import './link.scss';
+
+.copyright {
+    font-size: 48px;
+    @include link-variant(rgba(white, 0.5), white);
+}

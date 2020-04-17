@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/index.scss">
+</head>
+
+<body>
+    <div class="container layout">
+        <div class="layout__post-cover" style="background-image:url('https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg')"></div>
+        
+        <header class="layout__header">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4 text-center text-lg-left">
+                    <div class="logo text-center text-lg-left">
+                        <div class="logo__name"><img src="/assets/logo-name.svg" alt=""></div>
+                        <div class="logo__slogan"><img class="logo__slogan" src="/assets/logo-slogan.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 text-center text-lg-right">
+                    <nav class="main-menu">
+                        <a href="#" class="link link_text main-menu__link main-menu__link_active">About me</a>
+                        <a href="#" class="link link_textmain-menu__link">Books</a>
+                        <a href="#" class="link link_text main-menu__link">Technologies</a>
+                        <a href="#" class="link link_text main-menu__link">Entrepreneurship</a>
+                        <a href="#" class="link link_text main-menu__link">Projects</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="layout__main">
+            <article class="post">
+                <div class="post__meta">
+                    <h1 class="post__title">That’s just the shit i have to deal with!</h1>
+                    <div class="post-meta">
+                        <span class="post-meta__date">
+                            15 feb 2020
+                        </span>
+                        <span class="post-meta__category">in <a href="#" class="link link_text">Notes</a></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="post__body">
+                            <p>Text generation is a popular problem in Data Science and Machine Learning, and it is a
+                                suitable
+                                task for Recurrent Neural Nets. This report uses TensorFlow to build an RNN text
+                                generator and
+                                builds a high-level API in Python3. The report is inspired by @karpathy ( min-char-rnn)
+                                and
+                                Aurélien Géron ( Hands-On Machine Learning with Scikit-Learn and TensorFlow ). This is a
+                                class
+                                project in CST463 — Advanced Machine Learning at Cal State Monterey Bay, instructed by
+                                Dr. Glenn
+                                Bruns.</p>
+                            <h2>Modules</h2>
+                            <p>Dataset, RNNTextGenerator, and ModelSelector are the three main modules. For the
+                                documentation
+                                please check out this project on Github.
+                                Creates a recurrent neural network with a TensorFlow RNN cell (which performs dynamic
+                                unrolling
+                                of the inputs). It has an output projection layer which produces the final probability
+                                for each
+                                character class. It generates the text by sampling the next character based on the
+                                probability
+                                distribution of the last character of the current sequence.</p>
+                            <p>
+                                We can see the accuracy and loss have not converged. Each fit call will run one epoch
+                                (we passed
+                                epoch=1 to the constructor).
+                                We want to continue fitting the model with more epochs for 30 more seconds, and we’re
+                                interested
+                                in how the model improves over time.
+                                Text generation is a popular problem in Data Science and Machine Learning, and it is a
+                                suitable
+                                task for Recurrent Neural Nets. This report uses TensorFlow to build an RNN text
+                                generator and
+                                builds a high-level API in Python3. The report is inspired by @karpathy ( min-char-rnn)
+                                and
+                                Aurélien Géron ( Hands-On Machine Learning with Scikit-Learn and TensorFlow ). This is a
+                                class
+                                project in CST463 — Advanced Machine Learning at Cal State Monterey Bay, instructed by
+                                Dr. Glenn
+                                Bruns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+
+        </main>
+        <section class="layout__section">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="another-post another-post_prev">
+                        <a class="link link_text another-post__link" href="">PREVIOUS</a>
+                        <h2 class="another-post__title">That’s just the shit i have to deal with!</h2>
+                        <img class="another-post__thumb"
+                            src="https://image.freepik.com/free-photo/tropical-leaves-colorful-flower-dark-tropical-foliage-nature-background-dark-green-foliage_34998-128.jpg">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="another-post another-post_next">
+                        <a class="link link_text another-post__link" href="">next</a>
+                        <h2 class="another-post__title">That’s just the shit i have to deal with!</h2>
+                        <img class="another-post__thumb"
+                            src="https://image.freepik.com/free-photo/tropical-leaves-colorful-flower-dark-tropical-foliage-nature-background-dark-green-foliage_34998-128.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="layout__footer">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 text-center text-lg-right order-lg-3">
+                    <div class="powered-by">Superpowered by <a href="" class="link link_text">Wordpress</a></div>
+                </div>
+
+                <div class="col-12 col-lg-2 text-center order-lg-2 ">
+                    <a href="/" class="link copyright">&copy;</a>
+                </div>
+                <div class="col-12 col-lg-5 text-center text-lg-left order-lg-1">
+                    <div class="social-links">
+                        <a href="" class="link link_text social-links__link">Instagram</a>
+                        <a href="" class="link link_text social-links__link">Myspace</a>
+                        <a href="" class="link link_text social-links__link">Facebook</a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="/script.js"></script>
+
+</html>
