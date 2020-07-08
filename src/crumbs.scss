@@ -1,0 +1,11 @@
+.crumbs{
+    font-size:12px;
+    &__crumb{
+        @extend .link, .link_text;
+    }
+
+    &__divider{
+        opacity:0.15;
+        padding:$unit/4;
+    }
+}

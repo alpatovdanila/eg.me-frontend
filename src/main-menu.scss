@@ -7,6 +7,7 @@
     font-size: 0;
 
     &__link {
+        @extend .link, .link_text;
         white-space: nowrap;
         font-family: $font-family-accent;
         text-transform: uppercase;
@@ -17,11 +18,7 @@
 
         &_active {
             @include link-variant(lighten($color-primary, 10));
-            &:link,
-            &:hover,
-            &:visited {
-                text-decoration: none !important;
-            }
+            border:none;
         }
     }
 }

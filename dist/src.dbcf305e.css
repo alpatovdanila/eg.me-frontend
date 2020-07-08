@@ -4844,20 +4844,29 @@ body {
   width: 50%;
 }
 
-.link {
-  transition: color 0.16s linear;
+.link, .crumbs__crumb, .paginator__link, .main-menu__link {
+  line-height: 115%;
+  display: inline;
+  transition: all 0.16s linear;
 }
-.link:link, .link:hover, .link:visited {
-  text-decoration: none;
-}
-.link_text:link, .link_text:visited {
+.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
   color: #1998c1;
 }
-.link_text:hover, .link_text:visited:hover {
+.link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited:hover {
   color: #2ab6e3;
 }
-.link_text:link, .link_text:hover, .link_text:visited {
-  text-decoration: underline;
+.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
+  text-decoration: none;
+}
+.link_text, .crumbs__crumb, .main-menu__link {
+  border-bottom: 1px solid rgba(25, 152, 193, 0.25);
+}
+.link_text:link, .crumbs__crumb:link, .main-menu__link:link, .link_text:visited, .crumbs__crumb:visited, .main-menu__link:visited {
+  color: #1998c1;
+}
+.link_text:hover, .crumbs__crumb:hover, .main-menu__link:hover, .link_text:visited:hover {
+  border-color: #2ab6e3;
+  color: #2ab6e3;
 }
 
 .copyright {
@@ -4870,20 +4879,29 @@ body {
   color: white;
 }
 
-.link {
-  transition: color 0.16s linear;
+.link, .crumbs__crumb, .paginator__link, .main-menu__link {
+  line-height: 115%;
+  display: inline;
+  transition: all 0.16s linear;
 }
-.link:link, .link:hover, .link:visited {
-  text-decoration: none;
-}
-.link_text:link, .link_text:visited {
+.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
   color: #1998c1;
 }
-.link_text:hover, .link_text:visited:hover {
+.link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited:hover {
   color: #2ab6e3;
 }
-.link_text:link, .link_text:hover, .link_text:visited {
-  text-decoration: underline;
+.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
+  text-decoration: none;
+}
+.link_text, .crumbs__crumb, .main-menu__link {
+  border-bottom: 1px solid rgba(25, 152, 193, 0.25);
+}
+.link_text:link, .crumbs__crumb:link, .main-menu__link:link, .link_text:visited, .crumbs__crumb:visited, .main-menu__link:visited {
+  color: #1998c1;
+}
+.link_text:hover, .crumbs__crumb:hover, .main-menu__link:hover, .link_text:visited:hover {
+  border-color: #2ab6e3;
+  color: #2ab6e3;
 }
 
 .logo {
@@ -4918,14 +4936,14 @@ body {
 .main-menu__link:not(:last-child) {
   margin-right: 1rem;
 }
+.main-menu__link_active {
+  border: none;
+}
 .main-menu__link_active:link, .main-menu__link_active:visited {
   color: #2ab6e3;
 }
 .main-menu__link_active:hover, .main-menu__link_active:visited:hover {
   color: #2ab6e3;
-}
-.main-menu__link_active:link, .main-menu__link_active:hover, .main-menu__link_active:visited {
-  text-decoration: none !important;
 }
 
 .post-matrix__item {
@@ -4992,6 +5010,33 @@ body {
 .social-links__link {
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.paginator__link {
+  margin: 0.5rem;
+}
+.paginator__link:link, .paginator__link:visited {
+  color: rgba(25, 152, 193, 0.5);
+}
+.paginator__link:hover, .paginator__link:visited:hover {
+  color: #1998c1;
+}
+.paginator__link_active {
+  font-size: 24px;
+}
+.paginator__link_active:link, .paginator__link_active:visited {
+  color: #2ab6e3;
+}
+.paginator__link_active:hover, .paginator__link_active:visited:hover {
+  color: #2ab6e3;
+}
+
+.crumbs {
+  font-size: 12px;
+}
+.crumbs__divider {
+  opacity: 0.15;
+  padding: 0.25rem;
 }
 
 /*# sourceMappingURL=/src.dbcf305e.css.map */
