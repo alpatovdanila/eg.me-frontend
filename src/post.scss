@@ -1,4 +1,3 @@
-
 .post {
     padding-top: $unit * 3;
     &__title {
@@ -22,6 +21,15 @@
         h2 {
             font-size: 24px;
             padding-bottom: $unit/2;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        a {
+            @extend .link, .link_text;
         }
     }
 }

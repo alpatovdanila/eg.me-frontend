@@ -4833,7 +4833,7 @@ body {
   align-items: center;
   text-transform: uppercase;
   font-family: "Unica One", cursive;
-  min-height: 3rem;
+  margin-bottom: 1rem;
 }
 .another-post__title {
   font-size: 18px;
@@ -4844,27 +4844,27 @@ body {
   width: 50%;
 }
 
-.link, .crumbs__crumb, .paginator__link, .main-menu__link {
+.link, .crumbs__crumb, .paginator__link, .post__body a, .main-menu__link {
   line-height: 115%;
   display: inline;
   transition: all 0.16s linear;
 }
-.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
+.link:link, .crumbs__crumb:link, .paginator__link:link, .post__body a:link, .main-menu__link:link, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .post__body a:visited, .main-menu__link:visited {
   color: #1998c1;
 }
-.link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited:hover {
+.link:hover, .crumbs__crumb:hover, .paginator__link:hover, .post__body a:hover, .main-menu__link:hover, .link:visited:hover {
   color: #2ab6e3;
 }
-.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
+.link:link, .crumbs__crumb:link, .paginator__link:link, .post__body a:link, .main-menu__link:link, .link:hover, .crumbs__crumb:hover, .paginator__link:hover, .post__body a:hover, .main-menu__link:hover, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .post__body a:visited, .main-menu__link:visited {
   text-decoration: none;
 }
-.link_text, .crumbs__crumb, .main-menu__link {
+.link_text, .crumbs__crumb, .post__body a, .main-menu__link {
   border-bottom: 1px solid rgba(25, 152, 193, 0.25);
 }
-.link_text:link, .crumbs__crumb:link, .main-menu__link:link, .link_text:visited, .crumbs__crumb:visited, .main-menu__link:visited {
+.link_text:link, .crumbs__crumb:link, .post__body a:link, .main-menu__link:link, .link_text:visited, .crumbs__crumb:visited, .post__body a:visited, .main-menu__link:visited {
   color: #1998c1;
 }
-.link_text:hover, .crumbs__crumb:hover, .main-menu__link:hover, .link_text:visited:hover {
+.link_text:hover, .crumbs__crumb:hover, .post__body a:hover, .main-menu__link:hover, .link_text:visited:hover {
   border-color: #2ab6e3;
   color: #2ab6e3;
 }
@@ -4879,27 +4879,27 @@ body {
   color: white;
 }
 
-.link, .crumbs__crumb, .paginator__link, .main-menu__link {
+.link, .crumbs__crumb, .paginator__link, .post__body a, .main-menu__link {
   line-height: 115%;
   display: inline;
   transition: all 0.16s linear;
 }
-.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
+.link:link, .crumbs__crumb:link, .paginator__link:link, .post__body a:link, .main-menu__link:link, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .post__body a:visited, .main-menu__link:visited {
   color: #1998c1;
 }
-.link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited:hover {
+.link:hover, .crumbs__crumb:hover, .paginator__link:hover, .post__body a:hover, .main-menu__link:hover, .link:visited:hover {
   color: #2ab6e3;
 }
-.link:link, .crumbs__crumb:link, .paginator__link:link, .main-menu__link:link, .link:hover, .crumbs__crumb:hover, .paginator__link:hover, .main-menu__link:hover, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .main-menu__link:visited {
+.link:link, .crumbs__crumb:link, .paginator__link:link, .post__body a:link, .main-menu__link:link, .link:hover, .crumbs__crumb:hover, .paginator__link:hover, .post__body a:hover, .main-menu__link:hover, .link:visited, .crumbs__crumb:visited, .paginator__link:visited, .post__body a:visited, .main-menu__link:visited {
   text-decoration: none;
 }
-.link_text, .crumbs__crumb, .main-menu__link {
+.link_text, .crumbs__crumb, .post__body a, .main-menu__link {
   border-bottom: 1px solid rgba(25, 152, 193, 0.25);
 }
-.link_text:link, .crumbs__crumb:link, .main-menu__link:link, .link_text:visited, .crumbs__crumb:visited, .main-menu__link:visited {
+.link_text:link, .crumbs__crumb:link, .post__body a:link, .main-menu__link:link, .link_text:visited, .crumbs__crumb:visited, .post__body a:visited, .main-menu__link:visited {
   color: #1998c1;
 }
-.link_text:hover, .crumbs__crumb:hover, .main-menu__link:hover, .link_text:visited:hover {
+.link_text:hover, .crumbs__crumb:hover, .post__body a:hover, .main-menu__link:hover, .link_text:visited:hover {
   border-color: #2ab6e3;
   color: #2ab6e3;
 }
@@ -4958,7 +4958,6 @@ body {
 .post-meta {
   color: #a6a6a6;
   font-size: 14px;
-  height: 1rem;
   line-height: 16px;
 }
 
@@ -5000,7 +4999,10 @@ body {
   font-size: 24px;
   padding-bottom: 0.5rem;
 }
-
+.post__body img {
+  width: 100%;
+  height: auto;
+}
 .powered-by {
   text-transform: uppercase;
   opacity: 0.5;

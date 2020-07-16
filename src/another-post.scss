@@ -1,8 +1,4 @@
-
 .another-post {
-    &_prev {
-    }
-
     &_next {
         text-align: right;
     }
@@ -19,7 +15,7 @@
         @extend .h1;
         text-transform: uppercase;
         font-family: $font-family-accent;
-        min-height: $unit * 3;
+        margin-bottom: $unit;
     }
     &__title {
         font-size: 18px;
