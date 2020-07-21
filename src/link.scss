@@ -1,4 +1,3 @@
-
 @mixin link-variant($color, $hoverColor: $color) {
     &:link,
     &:visited {
@@ -11,35 +10,31 @@
 }
 
 @mixin link-underline-variant($color, $hoverColor: $color) {
-    border-bottom:1px solid rgba($color, 0.25);
+    border-bottom: 1px solid rgba($color, 0.25);
     &:link,
     &:visited {
         color: $color;
     }
     &:hover,
     &:visited:hover {
-        border-color :$hoverColor;
+        border-color: $hoverColor;
         color: $hoverColor;
     }
 }
 
-
 .link {
-    line-height:115%;
-    display:inline;
+    line-height: 115%;
+    display: inline;
 
     @include link-variant($color-primary, lighten($color-primary, 10));
     &:link,
     &:hover,
-
     &:visited {
         text-decoration: none;
     }
 
     &_text {
         @include link-underline-variant($color-primary, lighten($color-primary, 10));
-
-
     }
     transition: all $transition-micro;
 }

@@ -4820,6 +4820,7 @@ body {
 }
 .layout__section {
   margin-bottom: 7rem;
+  word-break: break-word;
 }
 
 .another-post_next {
@@ -4973,7 +4974,7 @@ body {
 .post-preview__title {
   padding: 0.5rem 0;
   align-items: center;
-  display: flex;
+  display: inline;
 }
 
 .post {
