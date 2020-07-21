@@ -4974,10 +4974,10 @@ body {
 .post-preview__title {
   padding: 0.5rem 0;
   align-items: center;
-  display: inline;
 }
 
 .post {
+  word-break: break-word;
   padding-top: 3rem;
 }
 .post__title {
@@ -4994,7 +4994,7 @@ body {
 }
 .post__body p {
   font-size: 16px;
-  line-height: 147%;
+  line-height: 164%;
 }
 .post__body h2 {
   font-size: 24px;
