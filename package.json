@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "parcel serve index.html",
+    "start-dev": "parcel serve index.html post.html",
     "build": "parcel build index.html --no-content-hash -d build"
   },
   "keywords": [],
