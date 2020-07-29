@@ -7,28 +7,22 @@
         min-height: $unit * 3;
         margin-bottom: $unit;
     }
-
     &__meta {
         margin-bottom: $unit * 2;
     }
-
     &__body {
         margin-bottom: $unit * 5;
         p {
             font-size: 16px;
             line-height: 164%;
         }
-
         h2 {
-            font-size: 24px;
             padding-bottom: $unit/2;
         }
-
         img {
             width: 100%;
             height: auto;
         }
-
         a {
             @extend .link, .link_text;
         }

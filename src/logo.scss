@@ -5,13 +5,11 @@
     @include media-breakpoint-up("lg") {
         padding-bottom: 0;
     }
-
     &__name {
         img {
             max-width: 100%;
         }
     }
-
     &__slogan {
         img {
             max-width: 100%;

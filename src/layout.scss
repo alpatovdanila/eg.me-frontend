@@ -6,7 +6,6 @@
         justify-content: center;
         margin-bottom: $unit;
     }
-
     &__post-cover {
         background-repeat: no-repeat;
         position: absolute;
@@ -19,14 +18,12 @@
         right: 0;
         filter: blur(25px);
     }
-
     &__footer {
         display: flex;
         padding: $unit * 2 0;
         flex-direction: column;
         justify-content: center;
     }
-
     &__section {
         margin-bottom: $unit * 7;
         word-break: break-word;

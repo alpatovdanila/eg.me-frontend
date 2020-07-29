@@ -3,10 +3,8 @@
         @extend .link;
         @include link-variant(rgba($color-primary, 50%), $color-primary);
         margin: $unit/2;
-
         &_active {
             font-size: 24px;
-
             @include link-variant(lighten($color-primary, 10));
         }
     }
