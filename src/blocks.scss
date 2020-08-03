@@ -1,0 +1,48 @@
+.block {
+    word-break: break-word;
+    padding-top: $unit * 3;
+    &__home {
+        p {
+            font-size: 16px;
+            line-height: 164%;
+        }
+        h2 {
+            padding-bottom: $unit/2;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        a {
+            @extend .link, .link_text;
+        }
+    }
+    &__meta {
+        p {
+            margin: 0;
+        }
+    }
+}
+.block-preview {
+    &_text-only {
+        height: 100%;
+        border: 1px solid rgba(white, 0.05);
+        padding: $unit;
+    }
+    &__thumb {
+        width: 100%;
+        margin-bottom: $unit/2;
+    }
+    &__title {
+        padding: 0rem 0 $unit/2 0;
+        align-items: center;
+    }
+}
+.block-matrix {
+    &__item {
+        margin-bottom: $unit * 2;
+        @include media-breakpoint-up("lg") {
+            margin-bottom: $unit * 3;
+        }
+    }
+}

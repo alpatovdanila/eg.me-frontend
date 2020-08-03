@@ -18,4 +18,19 @@
             border: none;
         }
     }
+    &__search-link {
+        @extend .link, .link_text;
+        white-space: nowrap;
+        font-family: $font-family-accent;
+        text-transform: uppercase;
+        border-bottom: none;
+        font-size: 18px;
+        &:not(:last-child) {
+            margin-right: $unit;
+        }
+        &_active {
+            @include link-variant(lighten($color-primary, 10));
+            border: none;
+        }
+    }
 }
