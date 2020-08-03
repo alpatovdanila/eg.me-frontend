@@ -5115,6 +5115,9 @@ h6 {
   padding: 0rem 0 0.5rem 0;
   align-items: center;
 }
+.block-preview img {
+  margin-top: 0.7em;
+}
 
 .block-matrix__item {
   margin-bottom: 2rem;
