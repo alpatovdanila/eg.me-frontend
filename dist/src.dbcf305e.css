@@ -4824,7 +4824,7 @@ blockquote p {
 }
 
 blockquote:before {
-  content: url("/quote.fca913f3.svg");
+  content: url("https://www.emilgadzhiyev.me/wp-content/themes/emilgadzhiyev/assets/svg/quote.svg");
   margin-right: 1em;
   margin-left: 1em;
 }
