@@ -4815,6 +4815,20 @@ h6 {
   font-size: 0.67em;
 }
 
+blockquote {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+blockquote p {
+  margin: 1em;
+}
+
+blockquote:before {
+  content: url("/quote.fca913f3.svg");
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
 .layout__header {
   height: 9rem;
   display: flex;

@@ -35,3 +35,14 @@ h5 {
 h6 {
     font-size: 0.67em;
 }
+blockquote {
+    border: 1px solid rgba(white, 0.05);
+}
+blockquote p {
+    margin: 1em;
+}
+blockquote:before {
+    content: url("../assets/quote.svg");
+    margin-right: 1em;
+    margin-left: 1em;
+}
