@@ -4815,6 +4815,10 @@ h6 {
   font-size: 0.67em;
 }
 
+img {
+  pointer-events: none;
+}
+
 blockquote {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -5140,6 +5144,76 @@ blockquote:before {
   .block-matrix__item {
     margin-bottom: 3rem;
   }
+}
+
+*:active,
+*:hover,
+*:focus {
+  outline: none !important;
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.homeSearchField {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  padding: 1rem;
+}
+
+.homeSearchForm {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #1998c1;
+}
+
+.homeSearchButton {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem 0 0;
+}
+
+.homeSearchButton:before {
+  content: url("https://www.emilgadzhiyev.me/wp-content/themes/emilgadzhiyev/assets/svg/search.svg");
+}
+
+.postPageShareButtonsDivs {
+  display: flex;
+}
+
+.postPageFbButton,
+.postPageTwitterButton,
+.postPageVkButton {
+  background: transparent;
+  border: 1px solid #1998c1;
+  padding: 0.5rem 1rem 0 1rem;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.postPageFbButton:before {
+  content: url("https://www.emilgadzhiyev.me/wp-content/themes/emilgadzhiyev/assets/svg/facebook.svg");
+}
+
+.postPageTwitterButton:before {
+  content: url("https://www.emilgadzhiyev.me/wp-content/themes/emilgadzhiyev/assets/svg/twitter.svg");
+}
+
+.postPageVkButton:before {
+  content: url("https://www.emilgadzhiyev.me/wp-content/themes/emilgadzhiyev/assets/svg/vk.svg");
 }
 
 /*# sourceMappingURL=/src.dbcf305e.css.map */

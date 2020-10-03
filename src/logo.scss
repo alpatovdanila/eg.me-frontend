@@ -1,7 +1,6 @@
 .logo {
     word-break: break-all;
     padding-bottom: $unit;
-
     @include media-breakpoint-up("lg") {
         padding-bottom: 0;
     }
