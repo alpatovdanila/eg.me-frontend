@@ -5,7 +5,8 @@
         margin: $unit/2;
         &_active {
             font-size: 24px;
-            @include link-variant(lighten($color-primary, 10));
+            // @include link-variant(lighten($color-primary, 10));
+            color: #a6a6a6;
         }
     }
 }

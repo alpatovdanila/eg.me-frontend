@@ -5085,12 +5085,7 @@ blockquote:before {
 }
 .paginator__link_active {
   font-size: 24px;
-}
-.paginator__link_active:link, .paginator__link_active:visited {
-  color: #2ab6e3;
-}
-.paginator__link_active:hover, .paginator__link_active:visited:hover {
-  color: #2ab6e3;
+  color: #a6a6a6;
 }
 
 .crumbs {
