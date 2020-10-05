@@ -17,6 +17,18 @@
             @extend .link, .link_text;
         }
     }
+    &__search {
+        p {
+            font-size: 14px;
+            line-height: 164%;
+        }
+        h2 {
+            padding-bottom: $unit/2;
+        }
+        a {
+            @extend .link, .link_text;
+        }
+    }
     &__meta {
         p {
             margin: 0;
