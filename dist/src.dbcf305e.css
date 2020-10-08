@@ -5161,11 +5161,7 @@ blockquote:before {
 .homeSearchButton {
   background: transparent;
   border: none;
-  padding: 0.5rem 1rem 0 0;
-}
-
-.homeSearchButton:before {
-  content: url("https://www.emilgadzhiyev.me/wp-content/themes/emilgadzhiyev/assets/svg/search.svg");
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .homeSearchResults {
